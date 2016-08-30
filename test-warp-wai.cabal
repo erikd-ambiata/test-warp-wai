@@ -22,13 +22,13 @@ library
   hs-source-dirs:      src
 
   build-depends:       base                     >= 4.8          && < 4.10
-                     , bytestring
-                     , connection
-                     , http-conduit
-                     , http-types
-                     , wai
-                     , warp
-                     , warp-tls
+                     , bytestring               == 0.10.*
+                     , connection               == 0.2.6.*
+                     , http-conduit             == 2.2.*
+                     , http-types               == 0.9.*
+                     , wai                      == 3.2.*
+                     , warp                     == 3.2.*
+                     , warp-tls                 == 3.2.*
 
   exposed-modules:     Common
 
@@ -40,8 +40,6 @@ executable test-warp-wai
 
   build-depends:       base                     >= 4.8          && < 4.10
                      , test-warp-wai
-                     , http-conduit
-                     , http-client-tls
 
 executable dummy-https-server
   main-is:             dummy-https-server.hs
