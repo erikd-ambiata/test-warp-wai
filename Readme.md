@@ -13,7 +13,9 @@ work on OSX. I'm also assuming that you have `wget` and `hexdump` installed.
 
 Clone this repo and the change into the freshly cloned source tree and do:
 
+* `git submodule update --init --recursive`
 * `cabal sandbox init`
+* `cabal sandbox add-source hs-connection`
 * `cabal install --dependencies-only`
 * `cabal build`
 

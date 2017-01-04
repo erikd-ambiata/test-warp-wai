@@ -23,7 +23,7 @@ library
 
   build-depends:       base                     >= 4.8          && < 4.10
                      , bytestring               == 0.10.*
-                     , connection               == 0.2.6.*
+                     , connection               == 0.2.6.20170105
                      , http-conduit             == 2.2.*
                      , http-types               == 0.9.*
                      , wai                      == 3.2.*
